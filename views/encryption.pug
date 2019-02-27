@@ -25,7 +25,7 @@ block content
                     button#encrypt-button.btn.btn-primary(type='button') Encrypt
               .form-group
                 label.control-label(for='data') Encrypted Message
-                textarea#encrypted.form-control(rows=5, aria-label='Encrypted Message', disabled)
+                textarea#encrypted.form-control(rows=5, aria-label='Encrypted Message')
           .tab-pane#decrypt(role='tabpanel', aria-labelledby='decrypt-tab')
             form.form-horizontal
               .form-group
@@ -39,7 +39,7 @@ block content
                     button#decrypt-button.btn.btn-primary(type='button') Decrypt
               .form-group
                 label.control-label(for='data') Decrypted Message
-                textarea#decrypted-message.form-control('rows=5', aria-label='Decrypted Message', disabled)
+                textarea#decrypted-message.form-control('rows=5', aria-label='Decrypted Message')
 
   script.
     var EC = elliptic.elliptic().ec;
